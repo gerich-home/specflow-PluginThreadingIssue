@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GlobalDependencyFromPlugin.cs" />
     <Compile Include="TestThreadDependencyFromPlugin.cs" />
     <Compile Include="ThePlugin.cs" />
     <Compile Include="ScenarioDependencyFromPlugin.cs" />

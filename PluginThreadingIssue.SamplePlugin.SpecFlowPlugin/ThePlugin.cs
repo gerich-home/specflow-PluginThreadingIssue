@@ -14,6 +14,10 @@ namespace PluginThreadingIssue.SamplePlugin.SpecFlowPlugin
             {
                 args.ObjectContainer.RegisterTypeAs<TestThreadDependencyFromPlugin>(typeof(TestThreadDependencyFromPlugin));
             };
+            runtimePluginEvents.CustomizeGlobalDependencies += (sender, args) =>
+            {
+                args.ObjectContainer.RegisterTypeAs<GlobalDependencyFromPlugin>(typeof(GlobalDependencyFromPlugin));
+            };
         }
     }
 }

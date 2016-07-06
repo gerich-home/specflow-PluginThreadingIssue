@@ -9,11 +9,13 @@ namespace PluginThreadingIssue.Specs
     {
         private readonly ScenarioDependencyFromPlugin _scenarioDependencyFromPlugin;
         private readonly TestThreadDependencyFromPlugin _testThreadDependencyFromPlugin;
+        private readonly GlobalDependencyFromPlugin _globalDependencyFromPlugin;
 
-        public StepDefinitions(ScenarioDependencyFromPlugin scenarioDependencyFromPlugin, TestThreadDependencyFromPlugin testThreadDependencyFromPlugin)
+        public StepDefinitions(ScenarioDependencyFromPlugin scenarioDependencyFromPlugin, TestThreadDependencyFromPlugin testThreadDependencyFromPlugin, GlobalDependencyFromPlugin globalDependencyFromPlugin)
         {
             _scenarioDependencyFromPlugin = scenarioDependencyFromPlugin;
             _testThreadDependencyFromPlugin = testThreadDependencyFromPlugin;
+            _globalDependencyFromPlugin = globalDependencyFromPlugin;
         }
 
         [Given(@"I have entered (.*) into the calculator")]
