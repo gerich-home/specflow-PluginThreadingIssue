@@ -42,6 +42,12 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginThreadingIssue.SamplePlugin.SpecFlowPlugin\PluginThreadingIssue.SamplePlugin.SpecFlowPlugin.csproj">
+      <Project>{94f8f59e-5a97-4e81-88b5-54b81bb5bba1}</Project>
+      <Name>PluginThreadingIssue.SamplePlugin.SpecFlowPlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
