@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TestThreadDependencyFromPlugin.cs" />
     <Compile Include="ThePlugin.cs" />
     <Compile Include="ScenarioDependencyFromPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

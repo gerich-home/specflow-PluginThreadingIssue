@@ -10,6 +10,10 @@ namespace PluginThreadingIssue.SamplePlugin.SpecFlowPlugin
             {
                 args.ObjectContainer.RegisterTypeAs<ScenarioDependencyFromPlugin>(typeof(ScenarioDependencyFromPlugin));
             };
+            runtimePluginEvents.CustomizeTestThreadDependencies += (sender, args) =>
+            {
+                args.ObjectContainer.RegisterTypeAs<TestThreadDependencyFromPlugin>(typeof(TestThreadDependencyFromPlugin));
+            };
         }
     }
 }

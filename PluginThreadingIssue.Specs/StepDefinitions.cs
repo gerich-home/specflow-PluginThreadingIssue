@@ -8,10 +8,12 @@ namespace PluginThreadingIssue.Specs
     public class StepDefinitions
     {
         private readonly ScenarioDependencyFromPlugin _scenarioDependencyFromPlugin;
+        private readonly TestThreadDependencyFromPlugin _testThreadDependencyFromPlugin;
 
-        public StepDefinitions(ScenarioDependencyFromPlugin scenarioDependencyFromPlugin)
+        public StepDefinitions(ScenarioDependencyFromPlugin scenarioDependencyFromPlugin, TestThreadDependencyFromPlugin testThreadDependencyFromPlugin)
         {
             _scenarioDependencyFromPlugin = scenarioDependencyFromPlugin;
+            _testThreadDependencyFromPlugin = testThreadDependencyFromPlugin;
         }
 
         [Given(@"I have entered (.*) into the calculator")]
