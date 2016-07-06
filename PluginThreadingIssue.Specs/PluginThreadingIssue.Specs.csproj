@@ -77,6 +77,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FeatureD.feature</DependentUpon>
     </Compile>
+    <Compile Include="FeatureE.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeatureE.feature</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureF.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeatureF.feature</DependentUpon>
+    </Compile>
     <Compile Include="StepDefinitions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +113,14 @@
     <None Include="FeatureD.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FeatureD.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureE.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FeatureE.feature.cs</LastGenOutput>
+    </None>
+    <None Include="FeatureF.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FeatureF.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
