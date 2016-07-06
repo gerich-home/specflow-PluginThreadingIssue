@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using PluginThreadingIssue.SamplePlugin.SpecFlowPlugin;
 using TechTalk.SpecFlow;
 
 namespace PluginThreadingIssue.Specs
@@ -6,6 +7,13 @@ namespace PluginThreadingIssue.Specs
     [Binding]
     public class StepDefinitions
     {
+        private readonly ScenarioDependencyFromPlugin _scenarioDependencyFromPlugin;
+
+        public StepDefinitions(ScenarioDependencyFromPlugin scenarioDependencyFromPlugin)
+        {
+            _scenarioDependencyFromPlugin = scenarioDependencyFromPlugin;
+        }
+
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(int p0)
         {
