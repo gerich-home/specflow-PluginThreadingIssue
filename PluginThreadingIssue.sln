@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginThreadingIssue.Specs", "PluginThreadingIssue.Specs\PluginThreadingIssue.Specs.csproj", "{47AD89EA-5810-426F-9104-3008CAAEB3CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginThreadingIssue.SamplePlugin.SpecFlowPlugin", "PluginThreadingIssue.SamplePlugin.SpecFlowPlugin\PluginThreadingIssue.SamplePlugin.SpecFlowPlugin.csproj", "{94F8F59E-5A97-4E81-88B5-54B81BB5BBA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{47AD89EA-5810-426F-9104-3008CAAEB3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AD89EA-5810-426F-9104-3008CAAEB3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AD89EA-5810-426F-9104-3008CAAEB3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F8F59E-5A97-4E81-88B5-54B81BB5BBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F8F59E-5A97-4E81-88B5-54B81BB5BBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F8F59E-5A97-4E81-88B5-54B81BB5BBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F8F59E-5A97-4E81-88B5-54B81BB5BBA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
